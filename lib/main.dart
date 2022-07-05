@@ -23,6 +23,8 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  final snackBar = SnackBar(content: Text('Saved'));
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
