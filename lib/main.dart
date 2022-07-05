@@ -33,7 +33,9 @@ class _MainPageState extends State<MainPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: (() {}),
+              onPressed: (() {
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              }),
               child: Text('save'),
             ),
           ],
