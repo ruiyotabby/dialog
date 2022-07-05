@@ -29,7 +29,12 @@ class _MainPageState extends State<MainPage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [ElevatedButton(onPressed: (() {}), child: Text('save'))],
+          children: [
+            ElevatedButton(
+              onPressed: (() {}),
+              child: Text('save'),
+            ),
+          ],
         ),
       ),
     );
