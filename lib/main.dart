@@ -23,7 +23,13 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final snackBar = SnackBar(content: Text('Saved'));
+  final snackBar = SnackBar(
+    content: Text('Saved'),
+    action: SnackBarAction(
+      label: 'Undo',
+      onPressed: () {},
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
