@@ -26,7 +26,12 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [ElevatedButton(onPressed: (() {}), child: Text('save'))],
+        ),
+      ),
     );
   }
 }
