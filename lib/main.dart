@@ -44,11 +44,11 @@ class _MainPageState extends State<MainPage> {
               }),
               child: Text('Save'),
             ),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             ElevatedButton(
-              onPressed: (() {
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
-              }),
+              onPressed: (() {}),
               child: Text('Delete'),
             ),
           ],
