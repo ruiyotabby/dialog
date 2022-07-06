@@ -105,24 +105,34 @@ class _MainPageState extends State<MainPage> {
                       title: Text('Choose your location'),
                       children: [
                         SimpleDialogOption(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pop(context, 'Kenya');
+                          },
                           child: Text('Kenya'),
                         ),
                         SimpleDialogOption(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pop(context, 'Tanzania');
+                          },
                           child: Text('Tanzania'),
                         ),
                         SimpleDialogOption(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pop(context, 'Uganda');
+                          },
                           child: Text('Uganda'),
                         ),
                       ],
                     );
                   },
                 );
+                setState(() {
+                  location = loc;
+                });
               }),
               child: Text('Choose Location'),
             ),
+            Text('$location'),
           ],
         ),
       ),
