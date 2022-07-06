@@ -32,6 +32,7 @@ class _MainPageState extends State<MainPage> {
   );
 
   String del = 'No choice';
+  String location = '';
 
   @override
   Widget build(BuildContext context) {
