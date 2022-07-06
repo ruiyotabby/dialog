@@ -48,6 +48,7 @@ class _MainPageState extends State<MainPage> {
               height: 10,
             ),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(primary: Colors.red),
               onPressed: (() {}),
               child: Text('Delete'),
             ),
