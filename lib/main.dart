@@ -54,6 +54,12 @@ class _MainPageState extends State<MainPage> {
                   context: context,
                   builder: (context) {
                     return AlertDialog(
+                      actions: [
+                        TextButton(
+                          onPressed: (() {}),
+                          child: Text('Yes'),
+                        )
+                      ],
                       title: Text('Delete?'),
                       content: Text('Are you sure?'),
                     );
