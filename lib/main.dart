@@ -97,7 +97,12 @@ class _MainPageState extends State<MainPage> {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: (() {}),
+              onPressed: (() async {
+                final String loc = await showDialog(
+                  context: context,
+                  builder: (context) {},
+                );
+              }),
               child: Text('Choose Location'),
             ),
           ],
