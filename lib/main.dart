@@ -49,7 +49,14 @@ class _MainPageState extends State<MainPage> {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(primary: Colors.red),
-              onPressed: (() {}),
+              onPressed: (() {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog();
+                  },
+                );
+              }),
               child: Text('Delete'),
             ),
           ],
