@@ -42,7 +42,14 @@ class _MainPageState extends State<MainPage> {
               onPressed: (() {
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               }),
-              child: Text('save'),
+              child: Text('Save'),
+            ),
+            SizedBox(height: 10,),
+            ElevatedButton(
+              onPressed: (() {
+                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              }),
+              child: Text('Delete'),
             ),
           ],
         ),
