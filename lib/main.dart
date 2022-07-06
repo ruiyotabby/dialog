@@ -92,6 +92,13 @@ class _MainPageState extends State<MainPage> {
               child: Text('Delete'),
             ),
             Text('$del'),
+            SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+              onPressed: (() {}),
+              child: Text('Choose Location'),
+            ),
           ],
         ),
       ),
