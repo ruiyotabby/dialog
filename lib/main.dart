@@ -53,7 +53,10 @@ class _MainPageState extends State<MainPage> {
                 showDialog(
                   context: context,
                   builder: (context) {
-                    return AlertDialog();
+                    return AlertDialog(
+                      title: Text('Delete?'),
+                      content: Text('Are you sure?'),
+                    );
                   },
                 );
               }),
