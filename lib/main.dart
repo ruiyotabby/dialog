@@ -31,6 +31,8 @@ class _MainPageState extends State<MainPage> {
     ),
   );
 
+  String del = 'No choice';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,6 +61,9 @@ class _MainPageState extends State<MainPage> {
                         TextButton(
                           child: Text('NO'),
                           onPressed: (() {
+                            setState(() {
+                              del = 'You chose No';
+                            });
                             Navigator.pop(context);
                           }),
                         ),
@@ -68,6 +73,9 @@ class _MainPageState extends State<MainPage> {
                             style: TextStyle(color: Colors.red),
                           ),
                           onPressed: (() {
+                            setState(() {
+                              del = 'You chose Yes';
+                            });
                             Navigator.pop(context);
                           }),
                         ),
@@ -80,6 +88,7 @@ class _MainPageState extends State<MainPage> {
               }),
               child: Text('Delete'),
             ),
+            Text('$del'),
           ],
         ),
       ),
