@@ -51,16 +51,26 @@ class _MainPageState extends State<MainPage> {
               style: ElevatedButton.styleFrom(primary: Colors.red),
               onPressed: (() {
                 showDialog(
+                  barrierDismissible: false,
                   context: context,
                   builder: (context) {
                     return AlertDialog(
                       actions: [
                         TextButton(
-                          child: Text('Yes'),
+                          child: Text('NO'),
                           onPressed: (() {
                             Navigator.pop(context);
                           }),
-                        )
+                        ),
+                        TextButton(
+                          child: Text(
+                            'YES',
+                            style: TextStyle(color: Colors.red),
+                          ),
+                          onPressed: (() {
+                            Navigator.pop(context);
+                          }),
+                        ),
                       ],
                       title: Text('Delete?'),
                       content: Text('Are you sure?'),
