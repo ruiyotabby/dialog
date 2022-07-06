@@ -100,7 +100,25 @@ class _MainPageState extends State<MainPage> {
               onPressed: (() async {
                 final String loc = await showDialog(
                   context: context,
-                  builder: (context) {},
+                  builder: (context) {
+                    return SimpleDialog(
+                      title: Text('Choose your location'),
+                      children: [
+                        SimpleDialogOption(
+                          onPressed: () {},
+                          child: Text('Kenya'),
+                        ),
+                        SimpleDialogOption(
+                          onPressed: () {},
+                          child: Text('Tanzania'),
+                        ),
+                        SimpleDialogOption(
+                          onPressed: () {},
+                          child: Text('Uganda'),
+                        ),
+                      ],
+                    );
+                  },
                 );
               }),
               child: Text('Choose Location'),
