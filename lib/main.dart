@@ -57,6 +57,9 @@ class _MainPageState extends State<MainPage> {
                   context: context,
                   builder: (context) {
                     return AlertDialog(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                       actions: [
                         TextButton(
                           child: Text('NO'),
