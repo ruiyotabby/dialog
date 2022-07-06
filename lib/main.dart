@@ -56,8 +56,10 @@ class _MainPageState extends State<MainPage> {
                     return AlertDialog(
                       actions: [
                         TextButton(
-                          onPressed: (() {}),
                           child: Text('Yes'),
+                          onPressed: (() {
+                            Navigator.pop(context);
+                          }),
                         )
                       ],
                       title: Text('Delete?'),
